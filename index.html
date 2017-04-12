@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阴阳师</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo fl">
+        <h1>
+            <a href="javascript:;" title="阴阳师">阴阳师</a>
+        </h1>
+    </div>
+    <div class="nav fr">
+        <ul>
+            <li><a href="javascript:;">注册账号</a></li>
+            <li><a href="javascript:;">账号充值</a></li>
+            <li><a href="javascript:;">网易游戏全目录 <i class="iconfont">&#xe662;</i></a></li>
+            <li>
+                <div>
+                    <span><a href="javascript:;">领取网易严选宝箱</a></span>
+                    <span><a href="javascript:;">安卓充值9.8折</a></span>
+                    <span><a href="javascript:;">领取网易严选宝箱</a></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <!-- 定位图片 -->
+    <div class="main-img">
+        <img class="bunny" src="images/bunny_cc1e937.gif" alt=""/>
+        <img class="yinyang" src="images/logo_7920691.png" alt=""/>
+        <img class="qingming" src="images/qingmin_5e1c3bc.png" alt=""/>
+        <img class="shenle" src="images/shenle_77d66bd.png" alt=""/>
+        <img class="slogon" src="images/slogon_fb1e8a7.png" alt=""/>
+
+        <div class="download clearfix">
+            <span>全平台公测</span>
+            <span>火爆进行中</span>
+
+            <div class="download-img">
+                <img src="images/57b280b496dee47507111c56NRN73rVj.png" alt=""/>
+                <img class="line" src="images/line_f7b07c8.png" alt=""/>
+            </div>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+    <nav class="clearfix">
+        <div class="nav-down">
+            <div class="down fl">
+                <span>扫码下载</span>
+                <img src="images/57b280b496dee47507111c56NRN73rVj.png" alt=""/>
+            </div>
+            <div class="yys fl">
+                <div>
+                    <h3>阴阳师</h3>
+
+                    <p>网易和风匠心巨制</p>
+                </div>
+            </div>
+        </div>
+        <ul class="fr clearfix">
+            <li><a href="javascript:;">官网首页</a></li>
+            <li><a href="javascript:;">新闻资讯</a></li>
+            <li><a href="javascript:;">游戏攻略</a></li>
+            <li><a href="javascript:;">游戏特色</a></li>
+            <li><a href="javascript:;">同人专区</a></li>
+            <li><a href="javascript:;">官方渠道</a></li>
+        </ul>
+    </nav>
+</main>
+<div class="news">
+    <div class="news-l fl">
+        <ul>
+            <li><img src="images/1.jpg" alt=""/></li>
+            <li><img src="images/2.jpg" alt=""/></li>
+            <li><img src="images/3.jpg" alt=""/></li>
+        </ul>
+    </div>
+    <div class="news-r fl">
+        <nav class="clearfix">
+            <ul>
+                <li><span></span><i></i></li>
+                <li><span></span><i></i></li>
+                <li><span></span><i></i></li>
+                <li><span></span><i></i></li>
+                <li><span></span><i></i></li>
+            </ul>
+        </nav>
+        <ul class="clearfix">
+            <li><a href="javascript:;">-【新闻】 声控召唤·阴阳师角色配音大赛获奖名单</a><span>2017-03-03</span></li>
+            <li><a href="javascript:;">-【活动】 大触觉醒第二季！同人插画大赛开启！</a><span>2017-03-03</span></li>
+            <li><a href="javascript:;">-【公告】 3月3日体验服维护更新公告</a><span>2017-03-03</span></li>
+            <li><a href="javascript:;">-【公告】 3月3日正式服维护更新公告</a><span>2017-03-03</span></li>
+            <li><a href="javascript:;">-【新闻】 新皮肤新副本 《阴阳师》女儿节版本即将上线</a><span>2017-03-03</span></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var count = 0;
+    var timer = null;
+    var timer1 = null;
+    timer = setInterval(fun, 3000);
+    function fun() {
+        if (count == 2) {
+            $("header .nav li").eq(3).children().css("top", 0);
+            count = 0;
+        }
+        count++;
+        $("header .nav ul").children().eq(3).children().animate({"top": -60 * count})
+    }
+    $("header .nav ul").children().eq(3).mouseenter(function () {
+        clearInterval(timer);
+    });
+    $("header .nav ul").children().eq(3).mouseleave(function () {
+        timer = setInterval(fun, 3000);
+    });
+
+    $(document).scroll(function () {
+        if ($(document).scrollTop() > 60) {
+            $("main nav").css({
+                "position": "fixed",
+                "top": 0,
+                "backgroundColor": "rgba(255,255,255,0.8)"
+            }).children().show();
+        } else {
+            $("main nav").css({
+                "position": "absolute",
+                "top": 60,
+                "backgroundColor": "transparent"
+            }).children(".nav-down").hide();
+        }
+        var Y = $(".yinyang").offset().top;
+        if($(document).scrollTop()>Y){
+            $(".yinyang").css({"transform":"scale(0,0)"});
+        }else {
+            $(".yinyang").css({"transform":"scale(1,1)"});
+        }
+    })
+    var timer10 = null;
+    function fun1() {
+        if ($(".line").position().top == 85) {
+            $(".line").css("top", 0);
+        }
+        $(".line").animate({"top": 85}, 3000,"linear")
+    }
+    fun1();
+    timer10 = setInterval(fun1, 3200);
+
+    timer1 = setInterval(function () {
+        $(".yinyang").animate({"left":44},2500)
+        $(".shenle").animate({"top":0},2000);
+        $(".qingming").animate({"top":42},2200);
+        $(".slogon").animate({"top":60,"opacity":1},1000)
+        clearInterval(timer1);
+    },1000)
+
+    $(".news-r nav li").mouseenter(function () {
+        $(this).children("i").css({"opacity":1,"top":5}).end().siblings().children("i").css({"opacity":0,"top":10});
+    });
+</script>
+</body>
+</html>

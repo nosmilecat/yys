@@ -1,0 +1,365 @@
+/*header B*/
+body {
+    height: 3000px;
+}
+
+header {
+    height: 60px;
+}
+
+header .logo {
+    margin-left: 200px;
+    margin-top: 8px;
+}
+
+header .logo a {
+    display: block;
+    width: 133px;
+    height: 44px;
+    text-indent: -999px;
+    background: url("../images/logo_b5525b7.png") no-repeat;
+}
+
+header .nav ul {
+    height: 60px;
+    margin-right: 200px;
+}
+
+header .nav ul li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+header .nav ul li:nth-child(3) a {
+    color: red;
+}
+
+header .nav ul li:last-child div {
+    position: relative;
+}
+
+header .nav ul li:last-child span {
+    display: block;
+    height: 60px;
+
+}
+
+header .nav ul li:hover {
+    border-bottom: 3px solid darkred;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, rgba(6, 6, 6, 0), rgba(6, 6, 6, 0.1));
+}
+
+/*С��ͷ*/
+@font-face {
+    font-family: "iconfont";
+    src: url('../css/jiantou/iconfont.eot?t=1484449196439'); /* IE9*/
+    src: url('../css/jiantou/iconfont.eot?t=1484449196439#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../css/jiantou/iconfont.woff?t=1484449196439') format('woff'), /* chrome, firefox */ url('../css/jiantou/iconfont.ttf?t=1484449196439') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../css/jiantou/iconfont.svg?t=1484449196439#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowDown:before {
+    content: "\e662";
+}
+
+/*header E*/
+/*main B*/
+main {
+    width: 100%;
+    height: 585px;
+    display: block;
+}
+
+.main-img {
+    width: 100%;
+    height: 585px;
+    background: url("../images/main_banner_04fad6b.jpg") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.main-img > img {
+    position: absolute;
+}
+
+.qingming {
+    top: 585px;
+    left: 420px;
+}
+
+.shenle {
+    top: 585px;
+    left: 350px;
+}
+
+.slogon {
+    top: -300px;
+    left: 150px;
+    opacity: 0;
+}
+
+.yinyang {
+    top: 33px;
+    left: -300px;
+    transition: all 1s;
+    /*transform: scale(1, 1);*/
+}
+
+.bunny {
+    top: 420px;
+    left: 100px;
+}
+
+main nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+main nav .nav-down {
+    display: none;
+}
+
+main nav .down {
+    margin: 15px 20px 0 10px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+main nav .down span {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+}
+
+main nav .down img {
+    margin-left: 10px;
+    width: 72px;
+    height: 72px;
+}
+
+main nav .yys {
+    height: 100px;
+}
+
+main nav .yys div {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+main nav .yys div h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+main nav .yys:before {
+    content: '';
+    float: left;
+    width: 73px;
+    height: 73px;
+    background: url("../images/index_z_b75e311.png") no-repeat -1440px -100px;
+    margin-top: 14px;
+}
+
+main nav ul {
+    height: 100px;
+}
+
+main nav ul li {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+
+main nav ul li a {
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.download {
+    width: 400px;
+    height: 120px;
+    position: absolute;
+    bottom: 0px;
+    left: 500px;
+    background-color: #fccc00;
+}
+
+.download:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background: url(../images/index_z_b75e311.png) -1482px -969px no-repeat;
+}
+
+.download span, div, a {
+    float: left;
+}
+
+.download span {
+    margin-top: 12px;
+    width: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+}
+
+.download span:first-child {
+    margin-left: 40px;
+}
+
+.download-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.download-img img:first-child {
+    margin-top: 5px;
+    width: 91px;
+    height: 91px;
+}
+
+.download-img img:last-child {
+    margin-top: 5px;
+    width: 91px;
+    height: 9px;
+    top: 0;
+    left: 5px;
+}
+
+.download-img .line {
+    position: absolute;
+}
+
+.download a:nth-last-child(2) {
+    display: block;
+    border-radius: 10px;
+    width: 171px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background: url(../images/index_z_b75e311.png) -1200px -1100px no-repeat;
+}
+
+.download a:nth-last-child(1) {
+    display: block;
+    border-radius: 10px;
+    width: 171px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background: url(../images/index_z_b75e311.png) -628px -1240px no-repeat;
+}
+
+/*main E*/
+
+/*news B*/
+.news {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+}
+.news-l {
+    width: 359px;
+    height: 270px;
+    overflow: hidden;
+}
+.news-l ul{
+    width: 3000px;
+    height: 270px;
+}
+.news-l ul li {
+    float: left;
+}
+.news-r {
+    margin-left: 30px;
+    width: 500px;
+}
+.news-r>ul li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-bottom: 1px dotted #000;
+}
+.news-r>ul span {
+    float: right;
+    color: #666;
+    font-size: 12px;
+}
+.news-r nav {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+.news-r nav li {
+    float: left;
+    margin: 0 20px;
+    position: relative;
+}
+.news-r nav li span {
+    display: block;
+    width: 44px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+.news-r li i {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 74px;
+    height: 33px;
+    background-color: skyblue;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 1s;
+}
+.news-r li:nth-child(1) i {
+    top: 5px;
+    opacity: 1;
+}
+.news-r>ul li:nth-child(1) {
+    margin-top: 2px;
+    border-top: 1px solid #000;
+}
+.news-r nav li:nth-child(1) span{
+    background: url("../images/index_z_b75e311.png") -1440px -746px no-repeat;
+}
+.news-r nav li:nth-child(2) span{
+    background: url("../images/index_z_b75e311.png") -585px -312px no-repeat;
+}
+.news-r nav li:nth-child(3) span{
+    background: url("../images/index_z_b75e311.png") -298px -302px no-repeat;
+}
+.news-r nav li:nth-child(4) span{
+    background: url("../images/index_z_b75e311.png") -342px -302px no-repeat;
+}
+.news-r nav li:nth-child(5) span{
+    background: url("../images/index_z_b75e311.png") -539px -312px no-repeat;
+}
+/*news E*/
